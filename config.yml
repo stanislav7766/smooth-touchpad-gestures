@@ -1,0 +1,28 @@
+swipe:
+  3:
+    down:
+      command: 'xte "keydown Control_L" "keydown Alt_L" "key D" "keyup Alt_L" "keyup Control_L"'
+    up:
+      command: 'xte "keydown Super_L" "keyup Super_L"'
+    left:
+      command: 'xte "keydown Alt_L" "keydown Shift_L" "key Tab" && sleep 0.4 && xte "keyup Alt_L" "keyup Shift_L"'
+    right:
+      command: 'xte "keydown Alt_L" "key Tab" && sleep 0.4 && xte "keyup Alt_L"'
+  4:
+    left:
+      command: 'xte "keydown Alt_L" "keydown Control_L" "key Right" "keyup Control_L" "keyup Alt_L"'
+    right:
+      command: 'xte "keydown Alt_L" "keydown Control_L" "key Left" "keyup Control_L" "keyup Alt_L"'
+pinch:
+  in:
+    command: 'xte "keydown Control_L" "key plus" "keyup Control_L"'
+  out:
+    command: 'xte "keydown Control_L" "keydown Shift_L" "key minus" "keyup Control_L" "keyup Shift_L"'
+
+threshold:
+  swipe: 0.8
+  pinch: 0.8
+
+interval:
+  swipe: 1
+  pinch: 1
