@@ -9,6 +9,8 @@ Visit source: https://github.com/iberianpig/fusuma and compare with my stuff bel
 
 1. Grant permission to read the touchpad device <br/>
 $ sudo gpasswd -a $USER input
+2. Install libinput-tools <br/>
+$ sudo apt-get install libinput-tools
 3. Install Ruby <br/>
 $ sudo apt-get install ruby 
 4. Install Fusuma <br/>
